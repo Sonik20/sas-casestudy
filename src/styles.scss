@@ -1,0 +1,81 @@
+@import "./assets/scss/config";
+@import "./assets/scss/utilities";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 1rem 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    &:hover {
+      border-color: $medium-color;
+    }
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+
+    .header-content {
+      text-align: center;
+      padding-top: 15%;
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+  &-inner {
+  }
+}
